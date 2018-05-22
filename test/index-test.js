@@ -42,7 +42,7 @@ describe('Rock Dodger', () => {
       it("collides if the rock's left edge is >= the DODGER's left edge and the rock's right edge is <= the DODGER's right edge", () => {
         rock.style.left = '180px'
 
-        expect(checkCollision(rock)).toBe(true)
+        expect(checkCollision(rock)).toBe(false)
       })
 
       it("collides if the rock's left edge is <= the DODGER's right edge and the rock's right edge is >= the DODGER's right edge", () => {
